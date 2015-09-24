@@ -4,7 +4,7 @@ class RaindropTest extends PHPUnit_Framework_TestCase {
 
     /**
      * @test
-     * @dataProvider numberProvider
+     * @dataProvider rainMaker
      *
      * @param $number
      * @param $expectedResult
@@ -14,7 +14,7 @@ class RaindropTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals($expectedResult, $raindrop->sound($number));
     }
 
-    function numberProvider() {
+    function rainMaker() {
         return [
             [1, "1"],
             [3, "Pling"],
